@@ -17,3 +17,12 @@ jobs:
           import platform
           print(platform.processor())
         shell: python
+
+  run_windows_command:
+    runs-on: windows-2022
+    steps:
+      - name: Directory PowerHhell
+        run: Get-Location
+      - name: Directory Bash
+        run: pwd
+        shell: bash
