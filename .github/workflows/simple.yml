@@ -7,8 +7,13 @@ jobs:
     runs-on: ubuntu-22.04
     steps:
       - name: echo a string
-        run: eccho "Hello world"
+        run: echo "Hello world"
       - name: multiline script
         run: |
           node -v
           npm -v
+      - name: Python command
+        run: |
+          import platform
+          print(platform.processor())
+        shell: python
