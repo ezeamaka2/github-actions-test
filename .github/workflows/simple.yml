@@ -7,9 +7,8 @@ jobs:
     runs-on: ubuntu-22.04
     steps:
       - name: echo a string
-        run: echo "Hello world"
+        run: eccho "Hello world"
       - name: multiline script
         run: |
           node -v
           npm -v
-  
