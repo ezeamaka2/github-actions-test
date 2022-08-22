@@ -20,6 +20,7 @@ jobs:
 
   run_windows_command:
     runs-on: windows-2022
+    needs: ["run_shell_command"]
     steps:
       - name: Directory PowerHhell
         run: Get-Location
