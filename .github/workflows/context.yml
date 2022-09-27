@@ -5,13 +5,14 @@ jobs:
   functions:
     runs-on: ubuntu-latest
     steps:
-      - name: function
+      - name: dump
         run: |
           echo ${{ contains( search, item ) }}
           echo ${{ contains( search, arc ) }}
           echo ${{ endsWith( search, rch ) }}
           echo ${{ startsWith( search, sea ) }}
           echo ${{ format('Hello {0} {1} {2}', 'World', '!', '!') }}
+
   dump_contexts_to_log:
     runs-on: ubuntu-latest
     steps:
