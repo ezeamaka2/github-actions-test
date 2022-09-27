@@ -7,9 +7,9 @@ jobs:
     steps:
       - name: dump
         run: |
-          echo ${{ contains( search, item ) }}
-          echo ${{ contains( search, arc ) }}
-          echo ${{ endsWith( search, rch ) }}
+          echo ${{ contains( food, item ) }}
+          echo ${{ contains( searching, arc ) }}
+          echo ${{ endsWith( cook, ok ) }}
           echo ${{ startsWith( search, sea ) }}
           echo ${{ format('Hello {0} {1} {2}', 'World', '!', '!') }}
 
