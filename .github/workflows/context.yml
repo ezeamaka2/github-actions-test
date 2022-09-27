@@ -20,13 +20,12 @@ jobs:
       - name: Dump GitHub context
         id: github_context_step
         run: eccho '${{ toJSON(github) }}'
+        continue-on-error: true
       - name: Dump job context
-        if: failure()
         run: echo '${{ toJSON(job) }}'
       - name: Dump steps context
         run: echo '${{ toJSON(steps) }}'
       - name: Dump runner context
-        if: always()
         run: echo '${{ toJSON(runner) }}'
       - name: Dump strategy context
         run: echo '${{ toJSON(strategy) }}'
