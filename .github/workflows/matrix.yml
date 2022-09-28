@@ -5,13 +5,15 @@ jobs:
   node-version:
     strategy:
       matrix:
+        os: [macos-lastest, ubuntu-latest, windows-latest]
         node: [ 10, 12, 14 ]
-    runs-on: ubuntu-latest
+    name: Node ${{ matrix.node }} sample
+    runs-on: ${{ matrix.os }}
     steps:
       - name: Log node version
         run: node --version
       - uses: actions/setup-node@v3
         with:
-          node-version: 14
+          node-version: ${{ matrix.node }}
       - name: Log node version
         run: node -v
