@@ -5,12 +5,12 @@ jobs:
   node-version:
     strategy:
       matrix:
-        os: [macos-lastest, ubuntu-latest, windows-latest]
-        node: [ 10, 12, 14 ]
+        os: [macos-latest, ubuntu-latest, windows-latest]
+        node: [10, 12, 14]
         include:
-        - os: ubuntu-latest
-          node: 12
-          is_ubuntu_10: "true"
+          - os: ubuntu-latest
+            node: 12
+            is_ubuntu_10: "true"
         exclude:
           - os: windows-latest
             node: 12
