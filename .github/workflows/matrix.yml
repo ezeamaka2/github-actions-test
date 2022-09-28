@@ -9,6 +9,6 @@ jobs:
         run: node --version
       - uses: actions/setup-node@v3
         with:
-          node-version: 16
+          node-version: 14
       - name: Log node version
         run: node -v
