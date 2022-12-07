@@ -1,3 +1,3 @@
-# github-actions-test
+# github-actions
 
-this is a CI/CD pipline with Github actions
+This is a CI/CD pipline with Github actions
